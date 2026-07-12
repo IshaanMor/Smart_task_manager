@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="hero-section rounded-4 shadow-lg p-5 text-white text-center">
+    <h1 class="display-5 fw-bold">One place for your tasks, deadlines, and goals.</h1>
+    <p class="lead text-white-75 mb-4">Smart Task Manager helps you stay organized with a clean dashboard, simple task flow, and powerful tracking.</p>
+    <div class="d-flex justify-content-center gap-3 flex-wrap">
+        <a class="btn btn-light btn-lg px-4" href="{{ url_for('register') }}">Get Started</a>
+        <a class="btn btn-outline-light btn-lg px-4" href="{{ url_for('login') }}">Sign In</a>
+    </div>
+</div>
+
+<div class="row mt-5 gy-4">
+    <div class="col-md-4">
+        <div class="feature-card p-4 rounded-4 shadow-sm h-100">
+            <h3>Track Tasks</h3>
+            <p>Keep all your tasks organized with priority labels, due dates, and status updates.</p>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="feature-card p-4 rounded-4 shadow-sm h-100">
+            <h3>Stay Focused</h3>
+            <p>Focus on what matters most with a dashboard built for productivity and clarity.</p>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="feature-card p-4 rounded-4 shadow-sm h-100">
+            <h3>Easy Access</h3>
+            <p>Access your task list anytime, anywhere with a responsive interface and simple flow.</p>
+        </div>
+    </div>
+</div>
+{% endblock %}
